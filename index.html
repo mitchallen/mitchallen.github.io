@@ -15,6 +15,7 @@
         <img id="texture-wall" src="img/arrow-left.png">
         <img id="texture-wall-blue" src="img/arrow-left-blue.png">
         <img id="texture-wall-red" src="img/arrow-left-red.png">
+        <img id="texture-floor" src="img/floor-texture-1.png">
         <a-box id="wall-one" 
           static-body material="src: #texture-wall" 
           depth="1" width="4" height="1"></a-box>
@@ -76,7 +77,7 @@
           maze='size: 4 5;' 
           position='-30 0.5 -5'></a-entity>
 
-      <a-grid id="ground" width="200" height="200" static-body color="#444444"></a-grid>
+      <a-grid id="ground" width="200" height="200" static-body material="src: #texture-floor"></a-grid>
     </a-scene>
     <script>
         // how to remove / add a maze attribute through JavaScript
